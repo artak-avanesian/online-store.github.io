@@ -27,9 +27,9 @@
 	height: 100px;
 	background: url(images/logo.png) no-repeat 50% / cover;
 	margin: 0 auto;
+	margin-right: 50px;
 }
 nav {
-	float: right;
 	margin-top: 20px;
 }
 .menu {
@@ -49,6 +49,7 @@ nav {
 	text-decoration: none;
 	font-family: "Arial";
 	font-size: 20px;
+	margin-top: 20px;
 }
 .menu li a:hover {
 	background: green;
@@ -56,6 +57,7 @@ nav {
 }
 main {
 	padding-top: 20px;
+	padding-left: 40px;
 }
 .product {
 	width: 100%;
@@ -122,6 +124,11 @@ main p {
 	display: block;
 	text-align: center;
 }
+.product .name {
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
 .name, .photo, .category {
 	cursor: pointer;
 }
@@ -161,13 +168,13 @@ main p {
 		width: 35px;
 		height: 35px;
 	}
+	main {
+		padding-left: 70px;
+	}
 }
 @media (min-width: 992px) and (max-width: 1200px) {
 	.col-md-4 {
 		width: 33.3333333%;
-	}
-	.col-md-8 {
-		width: 66.6666666%;
 	}
 	.photo {
 		width: 300px;
@@ -185,16 +192,13 @@ main p {
 		width: 28px;
 		height: 28px;
 	}
+	main {
+		padding-left: 50px;
+	}
 }
 @media (min-width: 1200px) {
 	.col-lg-3 {
 		width: 25%;
-	}
-	.col-lg-4 {
-		width: 33.3333333%;
-	}
-	.col-lg-8 {
-		width: 66.6666666%;
 	}
 	.photo {
 		width: 270px;
@@ -211,6 +215,15 @@ main p {
 	.star {
 		width: 21px;
 		height: 21px;
+	}
+	main {
+		padding-left: 45px;
+	}
+	nav {
+		float: right;
+	}
+	.menu li a {
+		margin-top: 0;
 	}
 }
 .footer {
